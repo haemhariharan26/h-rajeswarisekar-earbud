@@ -1,1 +1,41 @@
 @use '../abstracts/variables' as v;
+
+h2 {
+    font-family: 'roboto mono', segoe UI, Arial;
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-family: 'roboto mono', segoe UI, Arial;
+    font-size: 25px;
+    color: #fff;
+}
+
+a {
+    font-family: 'roboto mono', segoe UI, Arial;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    a {
+        text-decoration: none;
+    }  
+}
+

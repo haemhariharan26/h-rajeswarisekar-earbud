@@ -1,0 +1,130 @@
+#hero {
+    background-color: #687C83;
+    padding-bottom: 50px;
+}
+
+#hero h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+#work-with {
+    color: rgb(241, 112, 36);
+}
+
+.m-boxed {
+    height: 358px;
+    margin-bottom: 40px;
+    position: relative;
+    background: rgb(104, 124, 131);
+}
+
+#filter {
+    background-color: rgb(104, 124, 131);
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    height: 58px;
+    width: 184px;
+    font-size: 25px;
+    border-width: 0px;
+}
+
+#sort {
+    display: none;
+}
+
+#featured-text {
+    display: none;
+}
+
+#m-hidden {
+    display: none;
+}
+
+.hidden-item {
+    display: none;
+}
+
+.d-gallery {
+    display: none;
+}
+
+// Mobile About 
+
+#spencex-about {
+    display: none;
+}
+
+
+
+// Mobile Contact
+
+#contact {
+    background-color: #687C83;
+}
+
+#touch {
+    margin-bottom: 60px;
+    margin-top: 16px;
+    height: 59px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(241, 112, 36);
+    cursor: pointer;
+    font-size: 25px;
+    border-width: 0px;
+    transition: all 0.2s ease-in 0s;
+}
+
+// Tablet
+
+@media screen and (min-width: 768px) {
+
+    #menu {
+        display: none;
+      }
+    #hero-text h2 {
+        font-size: 60px;
+    }
+
+    // gallery
+
+    #filter {
+        display: none;
+    }
+
+    #sort {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        margin-top: 36px;
+    }
+
+    .sort {
+        font-size: 20px;
+        height: 56px;
+        width: 220px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        background: rgb(104, 124, 131);
+        border-width: 0px;
+    }
+
+    .d-gallery {
+        display: block;
+    }
+
+    #spencex-about {
+        display: block;
+        float: left;
+        margin-right: 30px;
+    }
+
+    // About
+
+    #about div p {
+        border-top: 0px rgb(241, 112, 36);
+    }
+
+    
+
+}

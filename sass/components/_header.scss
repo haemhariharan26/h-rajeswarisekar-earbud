@@ -1,1 +1,37 @@
 @use '../abstracts' as a;
+
+#main-nav {
+  background-color: #000000;
+  }
+  
+  #main-header {
+    background-color: #000000;
+  }
+  
+  #hamburger {
+    padding-top: 20px;
+    font-size: 43px;
+    z-index: 2;
+  }
+
+@media screen and (min-width: 768px) {
+    #main-nav {
+        display: block;
+      }
+    
+      #main-nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        color: #fff;
+        font-size: 30px;
+      }
+    
+      #main-nav ul li a {
+        text-decoration: none;
+      }
+    
+      #hamburger {
+        display: none;
+      }
+}
