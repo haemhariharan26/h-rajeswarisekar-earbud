@@ -1,37 +1,106 @@
 @use '../abstracts' as a;
 
+#logo {
+    margin-top: 30px;
+}
+
+#hamburger {
+    margin-top: 50px;
+    font-size: 50px;
+    transition: all .5s ease;
+
+}
+
 #main-nav {
-  background-color: #000000;
-  }
-  
-  #main-header {
-    background-color: #000000;
-  }
-  
-  #hamburger {
-    padding-top: 20px;
-    font-size: 43px;
+    display: none;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+}
+
+#hamburger.menu {
+    transform: rotate(90deg);
+    z-index: 3;
+    color: #fff;
+ }
+ 
+ #burger-con {
+    display: none;
+ }
+ 
+ #main-nav.slide-toggle {
+    display: block;
+    height: fit-content;
+    background-color: #747474;
+    opacity: 70%;
+    position: absolute;
     z-index: 2;
-  }
+    border-radius: 10px;
+ }
+
+#main-nav ul {
+    list-style: none;
+    padding: 40px;
+}
+
+#main-nav li {
+    padding: 10px 0 10px 0;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #fff;    
+    font-size: 20px;
+    border-bottom: 2px solid #fff;
+}
+
+#hamburger {
+    // display: none;
+    cursor: pointer;
+}
+
+#main-header {
+    margin-bottom: 70px;
+}
 
 @media screen and (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+
     #main-nav {
         display: block;
-      }
-    
-      #main-nav ul {
+        margin-top: 40px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    #main-nav ul {
         display: flex;
         justify-content: space-between;
         list-style: none;
-        color: #fff;
-        font-size: 30px;
-      }
-    
-      #main-nav ul li a {
+        padding: 0;
+    }
+
+    #main-nav ul a {
         text-decoration: none;
-      }
+        font-size: 20px;
+        color: #707070;
+    }
+
+    #main-nav ul a:hover {
+        color: black;
+        border-bottom: 2px solid black;
+        transition: .1s ease-in;
+    }
+
+    #main-nav.slide-toggle {
+        list-style: none;
+        background-color: transparent;
+        position: relative;
+    }
     
-      #hamburger {
-        display: none;
-      }
 }

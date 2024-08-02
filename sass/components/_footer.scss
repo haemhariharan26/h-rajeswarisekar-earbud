@@ -1,38 +1,77 @@
 @use '../abstracts' as a;
 
 #main-footer {
-    height: 160px;
-    background-color: #687C83;
-  }
-  
-  .fa {
-    color: #fff;
-    font-size: 75px;
-  }
-  
-  .fa-arrow-up {
-    font-size: 30px;
-    text-align: center;
-  }
-  
-  #socials {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #footer-text {
-    display: none;
-  }
+    background-color: #ebebeb;
+    padding-bottom: 35px;
+}
 
-  @media screen and (min-width: 768px) {
-    .fa-arrow-up {
-        font-size: 30px;
-        text-align: center;
-        float: right;
-      }
-    
-      #footer-text {
-        font-size: 30px;
-        display: flex;
-      }
-  }
+.footer-logo {
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+#main-footer h3 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+#main-footer h4 {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#main-footer p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#email {
+    height: 73px;
+    border-radius: 10px;
+    border: 1px solid #707070;
+    margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+ #main-footer h4 {
+    grid-row: 1;
+ }
+
+ #main-footer h3 {
+    font-size: 38px;
+ }
+
+ .footer-logo {
+    grid-row: 1;
+    cursor: pointer;
+ }
+
+ #main-footer p {
+    grid-row: 2;
+ }
+
+ #main-footer a {
+    grid-row: 2;
+ }
+
+ #main-footer p:hover {
+    color: #707070;
+ }
+
+ #email-header {
+    grid-row: 2;
+ }
+
+ #email {
+    grid-row: 2;
+    margin-top: 200px;
+ }
+
+}

@@ -1,130 +1,296 @@
-#hero {
-    background-color: #687C83;
-    padding-bottom: 50px;
+@use '../abstracts' as a;
+
+
+// Hero
+
+#hero-text {
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
-#hero h2 {
-    font-size: 30px;
-    color: #fff;
+#hero-text h3 {
+    font-size: 35px;
 }
 
-#work-with {
-    color: rgb(241, 112, 36);
+#hero-text p {
+    margin-top: 10px;
+    color: #707070;
 }
 
-.m-boxed {
-    height: 358px;
-    margin-bottom: 40px;
-    position: relative;
-    background: rgb(104, 124, 131);
-}
-
-#filter {
-    background-color: rgb(104, 124, 131);
-    color: rgb(255, 255, 255);
-    margin-bottom: 40px;
-    height: 58px;
-    width: 184px;
-    font-size: 25px;
-    border-width: 0px;
-}
-
-#sort {
-    display: none;
-}
-
-#featured-text {
-    display: none;
-}
-
-#m-hidden {
-    display: none;
-}
-
-.hidden-item {
-    display: none;
-}
-
-.d-gallery {
-    display: none;
-}
-
-// Mobile About 
-
-#spencex-about {
-    display: none;
-}
-
-
-
-// Mobile Contact
-
-#contact {
-    background-color: #687C83;
-}
-
-#touch {
-    margin-bottom: 60px;
-    margin-top: 16px;
-    height: 59px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(241, 112, 36);
+#check-product {
+    height: 48px;
+    background-color: #000;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     cursor: pointer;
-    font-size: 25px;
-    border-width: 0px;
-    transition: all 0.2s ease-in 0s;
 }
 
-// Tablet
+#check-product a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#check-product a:hover {
+    color: #000;
+}
+
+// scroll-animation
+
+.scroll-animation {
+    margin-bottom: 40px;
+}
+
+// X-ray Slider
+
+#outershell {
+    display: none;
+}
+
+// Best of the Best
+
+#best {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+#best h3 {
+    font-size: 28px;
+}
+
+// quality & colors
+
+#quality {
+    margin-top: 80px;
+}
+
+#quality h3 {
+    font-size: 28px;
+}
+
+#quality p {
+    margin-bottom: 70px;
+}
+
+// product
+
+#color-boxes {
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#blue {
+    width: 77px;
+    height: 77px;
+    border: 1px solid #000;
+    background-color: rgb(21, 21, 172);
+}
+
+#red {
+    width: 77px;
+    height: 77px;
+    background-color: #DA8483;
+    border: 1px solid #000;
+}
+
+#black {
+    width: 77px;
+    height: 77px;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+#yellow {
+    width: 77px;
+    height: 77px;
+    background-color: #FFA91F;
+    border: 1px solid #000;
+}
+
+#product-text {
+    font-size: 24px;
+}
+
+#product p {
+    margin-bottom: 25px;
+}
+
+#product-text p  {
+    line-height: 1.5;
+}
+
+#angles {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.angle-sizes {
+    width: 77px;
+    height: 77px;
+    border: 2px solid black;
+}
+
+// Product Features
+.componets {
+    margin-top: 20px;
+}
+
+.feature-box {
+    height: 209px;
+    border-radius: 10px;
+    background-color: #EDEDED;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+.feature-box:hover i {
+    font-size: 50px;
+    transition: all .5s ease;
+}
+
+.feature-box  p {
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.feature-box i {
+    font-size: 35px;
+}
+
+
+// hard code height for container
+#scroll-con {
+    height: 500px;
+}
 
 @media screen and (min-width: 768px) {
 
-    #menu {
-        display: none;
-      }
-    #hero-text h2 {
-        font-size: 60px;
+    // hero
+
+    #hero-text {
+        grid-row: 1;
     }
 
-    // gallery
-
-    #filter {
-        display: none;
+    #hero-text h3 {
+        font-size: 30px;
     }
 
-    #sort {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 28px;
-        margin-top: 36px;
+    #hero-text p {
+        font-size: 24px;
     }
 
-    .sort {
-        font-size: 20px;
-        height: 56px;
-        width: 220px;
-        color: rgb(255, 255, 255);
+    #check-product {
+        grid-row: 2;
         cursor: pointer;
-        background: rgb(104, 124, 131);
-        border-width: 0px;
+        width: 100%;
+
     }
 
-    .d-gallery {
-        display: block;
+    #check-product:hover {
+        background: transparent;
+        color: #000;
+        font-weight: bold;
+        border: 2px solid black;
+        cursor: pointer;
     }
 
-    #spencex-about {
-        display: block;
-        float: left;
-        margin-right: 30px;
-    }
-
-    // About
-
-    #about div p {
-        border-top: 0px rgb(241, 112, 36);
-    }
-
+    // hard code height for container
+        #scroll-con {
+            height: 1080px;
+        }
     
 
+     // X-ray slider
+
+     .mobile-x-ray {
+        display: none;
+    }
+
+    #outershell {
+        display: block;
+    }
+
+    .componets {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // best
+
+    #best {
+        margin-bottom: 80px;
+        margin-top: 100px;
+    }
+
+    // Products
+
+    #quality {
+        margin-bottom: 30px;
+    }
+
+    #product-image {
+        grid-row: 1;
+    }
+
+    #quality h3 {
+        font-size: 30px;
+        margin-bottom: 90px;
+    }
+
+    #quality p {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #angles {
+        grid-row: 1;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 450px;
+    }
+
+    #color-boxes {
+        display: flex;
+        grid-row: 1;
+        margin-top: 350px;
+    }
+    
+    
 }
+
+@media screen and (min-width: 1200px) { 
+        #quality h3 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        #color-boxes {
+            display: flex;
+            flex-direction: column; 
+            grid-row: 1;
+            margin: 0;
+            align-items: center;
+        }
+
+        #angles {
+            margin: 0;
+            margin-top: 20px;
+            grid-row: 2;
+        }
+
+        #scroll-con {
+            height: 1300px;
+        }
+    }

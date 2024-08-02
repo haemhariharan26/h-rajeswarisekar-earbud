@@ -1,41 +1,27 @@
 @use '../abstracts/variables' as v;
 
 h2 {
-    font-family: 'roboto mono', segoe UI, Arial;
-    font-size: 50px;
-}
+    font-family: "Poppins", segoe UI, Arial;
+  }
+  
+  h3 {
+    font-family: "Poppins", segoe UI, Arial;
+  }
 
-h3 {
-    font-size: 30px;
-}
+  h4 {
+    font-family: "Poppins", segoe UI, Arial;
+  }
+  
+  p {
+    font-family: "Poppins", segoe UI, Arial;
+  }
+  
+  a {
+    font-family: "Poppins", segoe UI, Arial;
+  }
 
-p {
-    font-family: 'roboto mono', segoe UI, Arial;
-    font-size: 25px;
-    color: #fff;
-}
-
-a {
-    font-family: 'roboto mono', segoe UI, Arial;
-    text-decoration: none;
-    color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-    h2 {
-        font-size: 50px;
-    }
-
-    h3 {
-        font-size: 35px;
-    }
-
+  @media screen and (min-width: 768px) {
     p {
-        font-size: 30px;
+      font-size: 24px;
     }
-
-    a {
-        text-decoration: none;
-    }  
-}
-
+  }

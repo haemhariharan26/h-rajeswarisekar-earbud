@@ -1,114 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>SPENCEX</title>
+  <head>
+    <title>Spence Speakers</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-</head>
+  </head>
+  <body>
 
-<body>
-    <h1 class="hidden">SPENCEX Headphones</h1>
-    <header id="main-header" class="grid-con"> 
-        <h2 class="hidden">SPENCEX Headphones</h2>     
-        <div class="menu-icon col-start-4">            
-            <i id="hamburger" class="fa fa-bars" aria-hidden="true"></i>        
+    <h1 class="hidden">Spence Speakers</h1>
+    <header id="main-header" class="grid-con">
+        <div class="m-col-start-2">
+            <a href="index.html"><img src="images/logo.svg" id="logo" alt="logo"></a>
         </div>
-        <div class="box m-col-start-1 m-col-end-3 col-span-2">
-            <div id="logo">Logo</div>
+        <div class="col-start-4 col-end-5" id="hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <nav class="col-span-full m-col-start-4 m-col-end-13" id="main-nav">
-            <ul id="menu">
-                <li><a href="#">Headphones</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="col-span-full m-col-start-5 m-col-end-12" id="main-nav">
+            <ul>
+                <li><a href="#best">INFORMATION</a></li>
+                <li><a href="#quality">PRODUCT</a></li>
+                <li><a href="#main-footer">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="grid-con" id="hero">
-            <div class="col-span-full m-col-start-2 m-col-end-11" id="hero-text">
-                <h2>FEEL THE BEST QUALITY
-                    SOUND EXPERIENCE</h2>
-                <p>Covered in a special acoustic mesh, an inset
-                    Microphone in each earbudminimises wind
-                    Noise when you’re on a call - so your voice
-                    Always heard loud and clear</p>
-           </div>
-        </section>
-
-        <section class="grid-con" id="ar-view">
-            <model-viewer id="model" src="model/earbuds-ar.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
-
-            </model-viewer>  
-                        <h2 class="linebreak col-span-full m-col-start-2 m-col-end-12">Spencex Earbud Version 2.0</h2>
-            <div class="m-boxed col-start-1 col-end-5 m-col-start-2 m-col-end-12">
-                <a href="#"><img src="" alt="">
-                <h3 class="gallery-box-text">AR View<br id="m-hidden"> Metalic Build</h3></a> 
-                <p id="featured-text"> </p> 
-            </div>
-
-                <div class="m-col-start-2 m-col-end-12" id="sort">
-                    <button class="sort m-col-span-full">Back view</button>
-                    <button class="sort m-col-span-full">Front View</button>
-         
+                <h2 class="hidden">Hero</h2>
+                <div class="col-span-full m-col-start-6 m-col-end-12">
+                    <img
+                        sizes="(max-width: 398px) 100vw, 398px"
+                        srcset="
+                        images/landinga-page-398x383_mvvqx0_c_scale,w_330.jpg 330w,
+                        images/landinga-page-398x383_mvvqx0_c_scale,w_398.jpg 398w"
+                        src="images/landinga-page-398x383_mvvqx0_c_scale,w_398.jpg"
+                        alt="earbuds">
                 </div>
-                    <div class="m-boxed col-span-full m-col-start-2 m-col-end-7">
-                        <a href="#"><img src="" alt="">
-                        <h3 class="gallery-box-text">Front View<br></h3></a>  
-                        <div class="hidden-item">
-                            <p>Touch Pad</p>
-                        </div>
-                    </div>
-                    <div class="m-boxed col-span-full m-col-start-7 m-col-end-12">
-                        <a href="#"><img src="" alt="">
-                        <h3 class="gallery-box-text">Back view<br></h3></a>
-                        <div class="hidden-item">
-                            <p>Noise Cancelation</p>
-                        </div>  
-                    </div>        
-                    </div>
-                    <div class="m-boxed col-start-1 col-end-5 m-col-start-2 m-col-end-12">
-                        <a href="#"><img src="" alt="">
-                        <h3 class="gallery-box-text">Bluetooth Hotspot<br id="m-hidden"> </h3></a> 
-                        <p id="featured-text"> </p> 
-                    </div>
-                   
-        </section>
+                <div class="col-span-full m-col-start-2 m-col-end-6" id="hero-text">
+                    <h3>FEEL THE BEST QUALITY SOUND EXPERIENCE</h3>
+                    <P>Covered in a special acoustic mesh, an inset Microphone in each earbudminimises wind Noise when you’re on a call - so your voice Always heard loud and clear</P>
+                </div>
+                 <div id="check-product" class="col-start-1 col-end-4 m-col-start-2 m-col-end-5">
+                    <a href="#quality">CHECK OUT PRODUCT <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+         </section>
 
-        <section class="grid-con" id="about">
-            <h2 class="linebreak col-span-full m-col-start-2 m-col-end-12">ABOUT US</h2>
-            <div class="col-span-full m-col-start-2 m-col-end-12">
-                <img class="m-col-start-2 m-col-end-7" id="spencex-about" src="images/earbud-img.jpg" alt="Handsome Man">
-                <p class="about-text">Spencex Earbuds consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit</p>
+         <section class="grid-con" id="scroll-con">
+                <h2 class="hidden">Scroll Animation</h2>
+                <div class="col-span-full">
+                    <canvas id="earbud-scroll"></canvas> 
+                </div>
+            </section>
 
-                <p class="linebreak about-text">WIRELESS EARBUDS ARE one of those ideas that sounded like a dream at first: Pop a little headphone into each ear and listen to music or take calls untethered from everything. The first wireless buds were gigantic, died after a few hours, and had a bunch of other problems. Times have changed. There are now tons of new models that sound fabulous and work perfectly. After testing hundreds over the past four years, these are our favorite wireless earbuds, in a wide range of styles and prices.</p>
+            <section class="grid-con">
+                <h2 class="hidden">X-ray slider</h2>
+                <div class="mobile-x-ray col-span-full">
+                    <img src="images/x-ray/x-ray-earbuds-l.jpg" alt="earbuds">
+                    <img src="images/x-ray/x-ray-earbuds-r.jpg" alt="X-ray buds">
+                </div>
+                <div class="m-col-span-full" id="outershell">
+                    <div id="imageSlider">
+                        <div class="slideImage" id="image-right"></div>
+                        <div class="slideImage" id="image-left"></div>
+                        <div class="slideImage" id="image-drag"></div>
+                    </div>
+                </div>                
+            </section>
+
+            <section class="grid-con">
+                <h2 class="hidden">Best of the Best</h2>
+                <div class="col-span-full m-col-start-2 m-col-end-12" id="best">
+                    <h3>Best of The Best</h3>
+                    <p>These earbuds deliver 5 hours of listening time and 3 hours of call time on a single charge. And they’re made to keep up with you, thanks to a Lightning Charging Case that holds multiple charges for more than 24 hours of listening time. Need a quick charge? Just 15 minutes in the case gives you 3 hours of listening time or 2 hours of talk time.</p>
+                </div>
+            </section>
+            
+            <div class="grid-con">
+                <div class="col-span-full">
+    <model-viewer id="model" src="model/earbuds-ar.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="model/poster.webp" shadow-intensity="1">
+        <button class="Hotspot" slot="hotspot-1" data-position="50.64203781932278m 500.1655192434828m -25.487933315367457m" data-normal="0.08717427877460024m 0.001712260987459407m -0.9961916047038537m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-1">
             </div>
-        </section>
-
-        <section class="grid-con" id="contact">
-            <div class="col-span-full m-col-start-2 m-col-end-12">
-                <h2 class="linebreak">CONTACT</h2>
+        </button>
+        
+        <button class="Hotspot" slot="hotspot-2" data-position="-40.74815807965315m 316.15727362709094m -23.12639141851534m" data-normal="0.45098019910760695m 0.3558793177885306m -0.8185149792051659m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-2">
             </div>
+        </button>
+        
+        <button class="Hotspot" slot="hotspot-3" data-position="157.16903525908833m 422.0847346256417m 56.53733933821843m" data-normal="0.8336247536691919m -0.11831062351244646m 0.5395112292010943m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-3">
+            </div>
+        </button>
+        
+        <button class="Hotspot" slot="hotspot-4" data-position="9.590505287564497m 550.7568709138694m 83.50520154996329m" data-normal="-0.1161910535765589m 0.11107938030835081m 0.9869959525444277m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-4">        
+            </div>
+        </button>
+
+        <button class="Hotspot" slot="hotspot-5" data-position="-37.68962719614919m 394.1449677344069m 151.90409520103628m" data-normal="-0.8822996849776343m 0.21716687481586824m 0.4175952758007165m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation" id="hotspot-5">        
+            </div>
+        </button>
+
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="model/ar_hand_prompt.png" alt="hand prompt">
+        </div>
+    </model-viewer>  
+</div>
+</div>
+
+            <section class="grid-con" id="quality">
+                <h2 class="hidden">Product</h2>
+                    <div class="col-span-full m-col-start-7 m-col-end-12">
+                        <h3>Quality & Colors</h3>
+                        <p>- Reduce noise by up to 98.5% with our advanced noise cancelling system <br>- Adaptive ANC 2.0 adapts to ears and environment in real-time <br>- 11mm drivers, Hi-Res Wireless and LDAC technology for crisp sound <br>- Full adjustable EQ with Hear ID 2.0 for a tailored sound profile <br>- 10/50 hours of battery for long-lasting quiet</p>
+                    </div>
+                    <div id="product-image" class="col-span-full m-col-start-2 m-col-end-6">
+                    </div>
+                    <div class="col-span-full m-col-start-2 m-col-end-7" id="angles">
+                        <img class="angle-sizes" data-image="blue_1_398" src="images/products/blue-box-1.jpg" alt="blue earbuds">
+                        <img class="angle-sizes" data-image="blue_3_398" src="images/products/blue-box-3.jpg" alt="blue earbuds one up">
+                        <img class="angle-sizes" data-image="blue_2_398" src="images/products/blue-box-2.jpg" alt="blue earbuds case open">
+                        <img class="angle-sizes" data-image="blue_4_398" src="images/products/blue-box-4.jpg" alt="blue earbuds case closed">
+                    </div>
+                    <div class="col-span-full m-col-start-2 m-col-end-6 l-col-start-6 l-col-end-6" id="color-boxes">
+                        <div id="blue"></div>
+                        <div id="red"></div>
+                        <div id="black"></div>
+                        <div id="yellow"></div>                        
+                    </div>
+            </section>
+
+            
+
+            <section class="grid-con" id="componets">          
+                <h2 class="hidden">Product Features</h2>
+                    <div class="feature-box col-span-full m-col-start-1 m-col-end-4">
+                        <i class="fa fa-battery-full" aria-hidden="true"></i>
+                        <p>14hr Battery Life</p>
+                    </div>
+                    <div class="feature-box col-span-full m-col-start-4 m-col-end-7">
+                        <i class="fa fa-bluetooth-b" aria-hidden="true"></i>
+                        <p>Wireless Bluetooth</p>
+                    </div>
+                    <div class="feature-box col-span-full m-col-start-7 m-col-end-10">
+                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                        <p>High Quality Mic</p>
+                    </div>
+                    <div class="feature-box col-span-full m-col-start-10 m-col-end-13">
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        <p>One Year Warranty</p>
+                    </div>
+            </section>
+
+            <section class="grid-con" id="product">
+                <h2 class="hidden">product text</h2>
                 <div class="col-span-full m-col-start-2 m-col-end-12">
-                    <textarea name="Your name" class="contact-box" id="name" rows="1" placeholder="Your Name:"></textarea>
-                    <input type="email" id="email" class="contact-box" name="email" placeholder="Email:">
-                    <textarea id="message" name="message" class="contact-box" rows="5" cols="25" placeholder="Messsage:"></textarea>
+                    <p>Hello Everyone, Spence Speakers are set to launch in CA . They will launch alongside the smartphone. The brand has put up a micro chip for Noise cancellation of the upcoming TWS earphones on its official website. It reveals the key specifications and features of the audio device.</p>                   
                 </div>
-            <button id="touch" class="col-start-2 col-end-5 m-col-start-5 m-col-end-9">GET IN TOUCH!</button>
-        </section>
+            </section>
+
     </main>
     <footer class="grid-con" id="main-footer">
-        <h2 class="hidden">Main Footer</h2>
-            <i class="fa fa-arrow-up col-start-4 col-end-5 m-col-start-12 m-col-end-13" aria-hidden="true"></i>
+        <h2 class="hidden">Main footer</h2>
+        <div class="footer-logo m-col-start-1">
+            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        </div>
+        <h3 id="email-header" class="col-span-full m-col-start-1 m-col-end-5">Sign up for stories and Personal offers</h3>
+            <input class="col-span-full m-col-start-1 m-col-end-5" type="email" id="email" name="email" placeholder=" Email: " >
+            <h4 class="col-span-full m-col-start-6 m-col-end-6">DISCOVER</h4>
+            <a class="col-span-full m-col-start-6 m-col-end-7" href="#"><p>AUDIO <br> POWER <br> SMART <br> HOME <br> GAMING <br> WIRELESS <br> SHOP ALL</p></a>
+            <h4 class="col-span-full m-col-start-8 m-col-end-8">OTHER RESOURCES</h4>
+            <a class="col-span-full m-col-start-8 m-col-end-10" href="#"><p>CONTACT US <br> FAQ <br> PRIVACY POLICY <br> SMART PRIVACY STATEMENT <br> TERMS & CONDITION <br> RETURN <br> POLICY DISCLAIMER <br> SHIPPING POLICY <br> VIRTUAL SHOWROOM</p></a>
+            <h4 class="col-span-full m-col-start-10 m-col-end-12">ALWAYS LEAD. NEVER FOLLOW.</h4>
+            <p class="col-span-full m-col-start-10 m-col-end-12">Live Life Loud! We don’t play when it comes to sound! We are the king of audio for a reason!</p>
     </footer>
-
+      
     <script src="https://kit.fontawesome.com/7d5f81e9b5.js" crossorigin="anonymous"></script>
-    <Script src="sass/main.scss"></Script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+    <script src="js/product-imgs.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/nav-scroll-to.js"></script>
+    <script src="js/scroll-animation.js"></script>
+    <script src="js/x-ray-slider.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

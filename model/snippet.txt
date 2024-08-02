@@ -1,0 +1,22 @@
+<model-viewer src="earbuds-ar.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-1" data-position="50.64203781932278m 500.1655192434828m -25.487933315367457m" data-normal="0.08717427877460024m 0.001712260987459407m -0.9961916047038537m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Skip/Play back songs</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="-40.74815807965315m 316.15727362709094m -23.12639141851534m" data-normal="0.45098019910760695m 0.3558793177885306m -0.8185149792051659m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Battery light and volume slider</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="157.16903525908833m 422.0847346256417m 56.53733933821843m" data-normal="0.8336247536691919m -0.11831062351244646m 0.5395112292010943m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">High quality surround sound</div>
+    </button><button class="Hotspot" slot="hotspot-5" data-position="9.590505287564497m 550.7568709138694m 83.50520154996329m" data-normal="-0.1161910535765589m 0.11107938030835081m 0.9869959525444277m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Lightning fast charger</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="-37.68962719614919m 394.1449677344069m 151.90409520103628m" data-normal="-0.8822996849776343m 0.21716687481586824m 0.4175952758007165m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Comfy quality silicone</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
